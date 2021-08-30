@@ -33,10 +33,5 @@ export default {
 
 <style lang="css" scoped>
 
-.post {
-    padding: 15px;
-    border: 2px solid teal;
-    margin-top: 15px;
-}
 
 </style>

@@ -1,11 +1,17 @@
 <template>
   <div class="post">
-    <div><strong>Название:</strong> {{post.title}}</div>
-    <div><strong>Описание:</strong> {{post.body}}</div>
-    </div>
+      <div>
+        <div><strong>Название:</strong> {{post.title}}</div>
+        <div><strong>Описание:</strong> {{post.body}}</div>
+      </div>
+      <div class="post__btns"> 
+        <my-button>Удалить</my-button>
+      </div>
+  </div>
 </template>
 
 <script>
+
 export default {
   name: 'PostItem',
   components: {},
@@ -24,4 +30,13 @@ export default {
 }
 </script>
 
-<style lang="css" scoped></style>
+<style lang="css" scoped>
+.post {
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+</style>
